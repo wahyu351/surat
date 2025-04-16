@@ -1,5 +1,4 @@
 # surat
-<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -70,22 +69,6 @@
     <img src="93f881ab984a7178916e8d8d8413152c.jpg" alt="Love" />
     <h2>Untuk Risma Winda Sari 💌</h2>
   </div>
-
-  <button id="share-btn" onclick="shareViaWA()">Bagikan lewat WhatsApp</button>
-
-  <script>
-    function openEnvelope() {
-      document.querySelector(".envelope").style.display = "none";
-      document.getElementById("message").style.display = "block";
-      document.getElementById("share-btn").style.display = "inline-block";
-    }
-
-    function shareViaWA() {
-      // Gantilah URL ini dengan URL halaman yang sesuai
-      const text = "Buka amplop ini untuk Risma Winda Sari 💌: https://www.example.com";
-      const waLink = "https://wa.me/?text=" + encodeURIComponent(text);
-      window.open(waLink, "_blank");
-    }
   </script>
 
 </body>
