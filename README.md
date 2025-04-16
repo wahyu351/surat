@@ -1,4 +1,4 @@
-# surat
+
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -12,10 +12,15 @@
       margin: 0;
       padding: 0;
     }
+    h1 {
+      margin-top: 40px;
+      font-size: 24px;
+      color: #ff4d4d;
+    }
     .envelope {
       width: 200px;
       height: 150px;
-      margin: 100px auto 20px;
+      margin: 40px auto 20px;
       background: #ff4d4d;
       position: relative;
       border-radius: 10px;
@@ -43,23 +48,11 @@
     #message img {
       width: 150px;
     }
-    #share-btn {
-      display: none;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #25D366;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    #share-btn:hover {
-      background: #128C7E;
-    }
   </style>
 </head>
 <body>
+
+  <h1>Klik amplop ini 💌</h1>
 
   <div class="envelope" onclick="openEnvelope()">
     <div class="flap"></div>
@@ -69,6 +62,13 @@
     <img src="93f881ab984a7178916e8d8d8413152c.jpg" alt="Love" />
     <h2>Untuk Risma Winda Sari 💌</h2>
   </div>
+
+  <script>
+    function openEnvelope() {
+      document.querySelector(".envelope").style.display = "none";
+      document.querySelector("h1").style.display = "none";
+      document.getElementById("message").style.display = "block";
+    }
   </script>
 
 </body>
